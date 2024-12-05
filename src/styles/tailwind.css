@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply bg-brand-background text-brand-text font-sans;
+}
+
+/* Example global utility classes */
+.container {
+  @apply max-w-screen-xl mx-auto px-4;
+}
+
+/* Custom button styles */
+.button-primary {
+  @apply bg-brand-primary text-white py-2 px-4 rounded shadow hover:bg-opacity-80;
+}
+
+.button-secondary {
+  @apply bg-brand-secondary text-white py-2 px-4 rounded shadow hover:bg-opacity-80;
+}
+
+.button-danger {
+  @apply bg-red-600 text-white py-2 px-4 rounded shadow hover:bg-red-700;
+}
+
+/* Responsive grid layouts */
+
+
+/* Form input styles */
+.form-input {
+  @apply border border-gray-300 rounded px-3 py-2 w-full focus:ring-brand-primary focus:border-brand-primary;
+}
+
+.form-label {
+  @apply text-sm font-medium text-gray-700 mb-1;
+}
+
+.form-error {
+  @apply text-sm text-red-500;
+}
+
+/* Custom card styles */
+.card {
+  @apply bg-white shadow-lg rounded-lg p-4;
+}
+
+/* Example typography */
+.h1 {
+  @apply text-3xl font-bold text-center mb-6;
+}
+
+.h2 {
+  @apply text-2xl font-semibold text-center mb-4;
+}
+
+.p {
+  @apply text-base text-gray-700 leading-relaxed;
+}
